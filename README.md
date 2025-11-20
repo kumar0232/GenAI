@@ -8,3 +8,7 @@ Using VS Code’s Thunder Client, the system supports full API interaction, incl
 
 The screenshots highlight successful API responses, showing that the GenAI agents are capable of extracting insights, summarizing technical features, and generating structured support answers. The system showcases how GenAI can automate enterprise customer service, improve accuracy, and provide scalable intelligent support across diverse domains, all while maintaining conversation context and agent coordination through a centralized orchestration layer.
 
+<img width="1366" height="768" alt="coding part" src="https://github.com/user-attachments/assets/ef508aed-8b5d-4a42-848c-244f5f2c948d" />
+
+
+<img width="579" height="404" alt="dinesh" src="https://github.com/user-attachments/assets/08b9214d-be91-45d4-b3be-da046a66cef1" />
