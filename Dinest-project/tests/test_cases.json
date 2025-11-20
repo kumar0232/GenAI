@@ -1,0 +1,88 @@
+{
+    "Product": [
+        {
+            "id": "product_1",
+            "query": "What are the key features of your Cloud Manager Pro service?",
+            "expected_output": "Cloud Manager Pro is our comprehensive cloud management platform designed for mid-sized businesses with growing infrastructure needs. It's priced at $149.99 monthly or $1,619.89 annually (with a 10% discount). Key features include: Advanced Monitoring, Smart Alerting, Cost Optimization, Automation Workflows, Multi-Cloud Support, 20 User Accounts. Can monitor up to 100 resources with email and chat support with a 12-hour response time.",
+            "criteria": {
+                "must_include": ["$149.99", "Advanced Monitoring", "Smart Alerting", "Multi-Cloud Support", "20 User Accounts"],
+                "agent_type": "product"
+            }
+        }
+    ],
+    "Technical": [
+        {
+            "id": "technical_1",
+            "query": "I'm getting error E5678 when trying to deploy a container. How do I fix this?",
+            "expected_output": "Error E5678 indicates a 'Container Image Verification Failed' issue. Steps to resolve: Check image integrity, verify signature configuration, review security scan results, check registry authentication. You can create a temporary exception in Security > Policies > Exceptions.",
+            "criteria": {
+                "must_include": ["Container Image Verification Failed", "check image integrity", "verify signature configuration", "security scan results"],
+                "agent_type": "technical"
+            }
+        }
+    ],
+    "Billing": [
+        {
+            "id": "billing_1",
+            "query": "Can you check the status of order #ORD-12345?",
+            "expected_output": "Order #ORD-12345: Status: Shipped, Order Date: September 10, 2023, Shipping Date: September 12, 2023, Expected Delivery Date: September 15, 2023, Item: Cloud Manager Pro (1 quantity), Total: $149.99.",
+            "criteria": {
+                "must_include": ["Shipped", "September 10, 2023", "Cloud Manager Pro", "$149.99"],
+                "agent_type": "billing"
+            }
+        }
+    ],
+    "MultiPart": [
+        {
+            "id": "multipart_1",
+            "query": "I'm having trouble with the API integration and also want to know if there's a discount for annual billing?",
+            "expected_output": "API integration: Provide specific issue details (e.g., error messages) for targeted troubleshooting. Annual billing: 10% discount on all plans, e.g., Cloud Manager Pro is $149.99/month or $1,619.89/year (saving ~$180).",
+            "criteria": {
+                "must_include": ["API integration", "troubleshooting", "10% discount", "$1,619.89"],
+                "agent_type": "multiple"
+            }
+        }
+    ],
+    "Account": [
+        {
+            "id": "account_1",
+            "query": "I need to add three users to my account. Can you help with that?",
+            "expected_output": "To add users: Log in to portal.techsolutions.example.com, go to Admin > User Management > Add User, enter email addresses, select roles, and send invitations. Cloud Manager Pro includes 20 user accounts. Additional licenses cost $99.99/month or $1,079.89/year.",
+            "criteria": {
+                "must_include": ["User Management", "20 user accounts", "$99.99"],
+                "agent_type": "account"
+            }
+        }
+    ],
+    "General": [
+        {
+            "id": "general_1",
+            "query": "I have a question about something I saw on your website.",
+            "expected_output": "Please share more details about what you saw on our website. Was it related to products, pricing, technical specifications, or support information?",
+            "criteria": {
+                "must_include": ["more details", "products", "pricing"],
+                "agent_type": "router"
+            }
+        }
+    ],
+    "Advanced": [
+        {
+            "id": "advanced_1",
+            "query": "I'm getting error E5678 on my Enterprise account deployment, and I also need to check if my recent order #ORD-56789 includes the new security module.",
+            "expected_output": "Error E5678: 'Container Image Verification Failed'. Check security scan results, verify signatures, or create an exception. Order #ORD-56789: Processing, includes Cloud Manager Enterprise ($499.99) and Premium Support ($299.99, with security features).",
+            "criteria": {
+                "must_include": ["Container Image Verification Failed", "security scan results", "ORD-56789", "Cloud Manager Enterprise", "$499.99", "Premium Support"],
+                "agent_type": "multiple"
+            }
+        },
+        {
+            "id": "advanced_2",
+            "query": "I need to upgrade my team's subscription from Basic to Pro and add 5 new user licenses. Also, what's the status of ticket #TKT-12345?",
+            "expected_output": "To upgrade to Pro and add licenses: Go to Billing section, select Cloud Manager Pro ($149.99/month), and add 'Additional 10 Users' ($99.99/month). Ticket #TKT-12345 status is not available; please provide more details or contact support.",
+            "criteria": {
+                "must_include": ["Cloud Manager Pro", "$149.99", "Additional 10 Users", "$99.99", "ticket status not available"],
+                "agent_type": "account"
+            }
+        }
+    ]
+}
